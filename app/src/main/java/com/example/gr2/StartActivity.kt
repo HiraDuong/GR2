@@ -25,6 +25,8 @@ class StartActivity : AppCompatActivity() {
         StartBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            mediaPlayer?.release()
+
         }
     }
 
